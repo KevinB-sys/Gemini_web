@@ -1,0 +1,86 @@
+/* Estilos específicos para la página de funcionalidades */
+.feature-card {
+    background-color: #1c2128;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card img {
+    width: 250px; /* Establece el ancho deseado */
+    height: 150px; /* Establece la altura deseada */
+    border-radius: 6px;
+    object-fit: cover; /* Asegura que la imagen cubra el área y se recorte si es necesario */
+}
+
+.feature-card h3 {
+    color: #f0f8ff;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.feature-card p {
+    color: #c9d1d9;
+    line-height: 1.6;
+}
+
+.learn-more-feature {
+    background-color: #58a6ff;
+    color: #161b22;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-feature:hover {
+    background-color: #8b949e;
+    color: #161b22;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 560px; /* Ajusta según el ancho del iframe */
+    border-radius: 6px;
+    overflow: hidden; /* Para que el borde redondeado del iframe se vea */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+    display: block; /* Evita espacio extra debajo del iframe */
+    width: 100%;
+    height: auto; /* La altura se ajusta proporcionalmente */
+}
+
+/* Animaciones (reutilizando las de index.css) */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.fade-in-delay {
+    animation: fadeInUp 1s ease-out;
+}
