@@ -2,12 +2,13 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background: #0d1117; 
-    color: #c9d1d9; 
+    background: linear-gradient(to bottom left, #0f172a, #0c4a6e); /* slate-900 to sky-900 */
+    color: #c9d1d9;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 
 /* ANIMACIONES */
 @keyframes fadeIn {
