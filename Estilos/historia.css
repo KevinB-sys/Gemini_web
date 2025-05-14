@@ -1,0 +1,110 @@
+/* Estilos específicos para la página de historia */
+.timeline-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.timeline-card {
+    background-color: #1c2128;
+    border-radius: 8px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1.5em;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* Para posicionar el overlay */
+    overflow: hidden; /* Para que el overlay no se salga */   
+}
+
+.timeline-card:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-card img {
+    width: 250px; /* Establece el ancho deseado */
+    height: 150px; /* Establece la altura deseada */
+    border-radius: 6px;
+    margin-bottom: 1em;
+    object-fit: cover; /* Asegura que la imagen cubra el área y se recorte si es necesario */
+}
+
+.timeline-card h3 {
+    color: #f0f8ff;
+    margin-bottom: 0.5em;
+}
+
+.timeline-card p {
+    color: #c9d1d9;
+    font-size: 0.95em;
+    margin-bottom: 1em;
+}
+
+.learn-more {
+    background-color: #58a6ff;
+    color: #161b22;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #8b949e;
+    color: #161b22;
+}
+
+/* Estilos para el overlay de información */
+.info-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 33, 40, 0.9); /* Fondo oscuro semitransparente */
+    color: #c9d1d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.timeline-card.active-info .info-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.info-overlay h4 {
+    color: #f0f8ff;
+    margin-bottom: 0.8em;
+}
+
+.info-overlay p {
+    font-size: 1em;
+    line-height: 1.7;
+    padding: 0 1.5em;
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+.close-info {
+    background-color: #8b949e;
+    color: #161b22;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.close-info:hover {
+    background-color: #58a6ff;
+    color: #161b22;
+}
