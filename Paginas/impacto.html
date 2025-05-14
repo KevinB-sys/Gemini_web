@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini - Impacto Académico</title>
+    <link rel="stylesheet" href="../Estilos/index.css" />
+    <link rel="stylesheet" href="../Estilos/impacto.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="../Scripts/impacto.js"></script>
+</head>
+
+<body>
+    <header class="header-gemini">
+        <img src="../Imagenes/gemini-header.jpg" alt="Gemini Header" class="img-header">
+    </header>
+
+    <nav class="slide-down">
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="funcionalidades.html">Funcionalidades</a>
+        <a href="impacto.html" class="active">Impacto Académico</a>
+        <a href="recursos.html">Recursos y Servicios</a>
+    </nav>
+
+    <main class="fade-in-delay">
+        <h2>Impacto Académico de Gemini</h2>
+        <div class="impact-container">
+            <div class="impact-card" data-area="investigacion">
+                <img src="../Imagenes/investigacion-academica.jpg" alt="Investigación Académica">
+                <h3>Investigación Académica</h3>
+                <p>
+                    Gemini ha revolucionado la forma en que los investigadores abordan el análisis de datos complejos
+                    y la revisión de literatura científica, acelerando significativamente el proceso de investigación.
+                </p>
+                <button class="learn-more" data-modal-id="modal-investigacion">Ver más</button>
+            </div>
+
+            <div class="impact-card" data-area="educacion">
+                <img src="../Imagenes/educacion-personalizada.png" alt="Educación Personalizada">
+                <h3>Educación Personalizada</h3>
+                <p>
+                    La capacidad de Gemini para adaptar el contenido educativo a diferentes niveles y estilos de aprendizaje
+                    ha transformado la experiencia educativa tanto para estudiantes como para profesores.
+                </p>
+                <button class="learn-more" data-modal-id="modal-educacion">Ver más</button>
+            </div>
+
+            <div class="impact-card" data-area="colaboracion">
+                <img src="../Imagenes/colaboracion-academica.jpg" alt="Colaboración Académica">
+                <h3>Colaboración Académica</h3>
+                <p>
+                    Gemini facilita la colaboración internacional entre instituciones académicas, permitiendo
+                    el análisis y la traducción de investigaciones en múltiples idiomas.
+                </p>
+                <button class="learn-more" data-modal-id="modal-colaboracion">Ver más</button>
+            </div>
+
+            <div class="impact-card" data-area="evaluacion">
+                <img src="../Imagenes/evaluacion-academica.jpg" alt="Evaluación Académica">
+                <h3>Evaluación y Retroalimentación</h3>
+                <p>
+                    La IA de Gemini proporciona retroalimentación detallada y personalizada en trabajos académicos,
+                    ayudando a mejorar la calidad de la educación.
+                </p>
+                <button class="learn-more" data-modal-id="modal-evaluacion">Ver más</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" id="modal-investigacion">
+        <div class="modal-content">
+            <h4>Impacto en la Investigación</h4>
+            <p>Gemini ha demostrado ser una herramienta invaluable en el campo de la investigación académica:</p>
+            <ul>
+                <li>Análisis rápido de grandes volúmenes de papers académicos</li>
+                <li>Identificación de patrones y conexiones entre diferentes campos de estudio</li>
+                <li>Asistencia en la redacción y revisión de papers científicos</li>
+                <li>Procesamiento y análisis de datos experimentales</li>
+            </ul>
+            <button class="close-modal" data-modal-id="modal-investigacion">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-educacion">
+        <div class="modal-content">
+            <h4>Transformación Educativa</h4>
+            <p>La educación personalizada con Gemini incluye:</p>
+            <ul>
+                <li>Generación de planes de estudio adaptativos</li>
+                <li>Creación de materiales didácticos multimodales</li>
+                <li>Tutorías virtuales 24/7</li>
+                <li>Adaptación del contenido según el nivel y estilo de aprendizaje</li>
+            </ul>
+            <button class="close-modal" data-modal-id="modal-educacion">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-colaboracion">
+        <div class="modal-content">
+            <h4>Colaboración Global</h4>
+            <p>Gemini potencia la colaboración académica mediante:</p>
+            <ul>
+                <li>Traducción en tiempo real de documentos académicos</li>
+                <li>Facilitación de conferencias multilingües</li>
+                <li>Coordinación de proyectos de investigación internacionales</li>
+                <li>Compartición de recursos educativos globales</li>
+            </ul>
+            <button class="close-modal" data-modal-id="modal-colaboracion">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-evaluacion">
+        <div class="modal-content">
+            <h4>Evaluación Innovadora</h4>
+            <p>La evaluación académica se beneficia de:</p>
+            <ul>
+                <li>Análisis detallado de trabajos escritos</li>
+                <li>Retroalimentación instantánea y constructiva</li>
+                <li>Detección de áreas de mejora</li>
+                <li>Sugerencias personalizadas para el desarrollo académico</li>
+            </ul>
+            <button class="close-modal" data-modal-id="modal-evaluacion">Cerrar</button>
+        </div>
+    </div>
+
+    <footer class="fade-in-delay">
+        © 2025 | Proyecto sobre Gemini IA
+    </footer>
+
+    <div class="modal-overlay"></div>
+</body>
+
+</html> 
