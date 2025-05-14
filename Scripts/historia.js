@@ -1,25 +1,38 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const timelineCards = document.querySelectorAll('.timeline-card');
+    const learnMoreButtons = document.querySelectorAll('.learn-more');
+    const closeModalButtons = document.querySelectorAll('.close-modal');
+    const modalOverlay = document.querySelector('.modal-overlay');
+    const body = document.body;
 
-    timelineCards.forEach(card => {
-        const learnMoreButton = card.querySelector('.learn-more');
-        const closeInfoButton = card.querySelector('.close-info');
-        const infoOverlay = card.querySelector('.info-overlay');
-
-        learnMoreButton.addEventListener('click', () => {
-            card.classList.add('active-info');
-        });
-
-        closeInfoButton.addEventListener('click', () => {
-            card.classList.remove('active-info');
-        });
-
-        // Opcional: Cerrar el overlay al hacer clic fuera de la tarjeta
-        card.addEventListener('click', (event) => {
-            if (card.classList.contains('active-info') && !event.target.closest('.info-overlay')) {
-                card.classList.remove('active-info');
+    learnMoreButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modalId = button.dataset.modalId;
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('active');
+                modalOverlay.classList.add('active');
+                body.classList.add('modal-open'); // Opcional: para deshabilitar el scroll del fondo
             }
         });
     });
-    
+
+    closeModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modalId = button.dataset.modalId;
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('active');
+                modalOverlay.classList.remove('active');
+                body.classList.remove('modal-open'); // Opcional: para habilitar el scroll del fondo
+            }
+        });
+    });
+
+    modalOverlay.addEventListener('click', () => {
+        document.querySelectorAll('.modal.active').forEach(modal => {
+            modal.classList.remove('active');
+        });
+        modalOverlay.classList.remove('active');
+        body.classList.remove('modal-open'); // Opcional
+    });
 });

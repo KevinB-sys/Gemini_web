@@ -36,17 +36,7 @@
                     para un modelo de IA multimodal de próxima generación. Se exploraron arquitecturas innovadoras y se
                     definieron los objetivos clave de razonamiento avanzado y comprensión multimodal.
                 </p>
-                <button class="learn-more">Ver más</button>
-                <div class="info-overlay">
-                    <h4>2022: Detalles Iniciales</h4>
-                    <p>
-                        Durante este año, se sentaron las bases teóricas para la integración de diferentes tipos de
-                        datos
-                        (texto, imágenes, audio, código) en un solo modelo. Se realizaron experimentos preliminares con
-                        diferentes técnicas de aprendizaje automático y se identificaron los desafíos clave a superar.
-                    </p>
-                    <button class="close-info">Cerrar</button>
-                </div>
+                <button class="learn-more" data-modal-id="modal-2022">Ver más</button>
             </div>
 
             <div class="timeline-card" data-year="2023">
@@ -58,17 +48,7 @@
                     y la colaboración de múltiples equipos. Se comenzaron a construir los modelos base y se experimentó
                     con grandes conjuntos de datos multimodales.
                 </p>
-                <button class="learn-more">Ver más</button>
-                <div class="info-overlay">
-                    <h4>2023: Avances Clave</h4>
-                    <p>
-                        Se lograron avances importantes en la arquitectura del modelo, permitiendo una mejor alineación
-                        entre las diferentes modalidades de entrada. Se desarrollaron técnicas para el entrenamiento
-                        eficiente de modelos a gran escala y se realizaron pruebas internas para evaluar las capacidades
-                        iniciales de Gemini.
-                    </p>
-                    <button class="close-info">Cerrar</button>
-                </div>
+                <button class="learn-more" data-modal-id="modal-2023">Ver más</button>
             </div>
 
             <div class="timeline-card" data-year="2024">
@@ -80,18 +60,7 @@
                     refinar
                     el modelo y mejorar su rendimiento en aplicaciones del mundo real.
                 </p>
-                <button class="learn-more">Ver más</button>
-                <div class="info-overlay">
-                    <h4>2024: Despliegue Inicial</h4>
-                    <p>
-                        Durante este año, se realizaron los primeros despliegues limitados de Gemini en entornos
-                        controlados.
-                        Se evaluaron sus capacidades en tareas como el razonamiento sobre imágenes, la comprensión de
-                        audio
-                        y la generación de código, obteniendo resultados prometedores.
-                    </p>
-                    <button class="close-info">Cerrar</button>
-                </div>
+                <button class="learn-more" data-modal-id="modal-2024">Ver más</button>
             </div>
 
             <div class="timeline-card" data-year="2025">
@@ -104,25 +73,69 @@
                     integración
                     en un número creciente de aplicaciones.
                 </p>
-                <button class="learn-more">Ver más</button>
-                <div class="info-overlay">
-                    <h4>2025: El Presente y el Futuro</h4>
-                    <p>
-                        Actualmente, Gemini sigue evolucionando, con actualizaciones periódicas que mejoran su
-                        rendimiento
-                        y añaden nuevas funcionalidades. El enfoque se centra en hacerlo más accesible y útil para una
-                        amplia gama de usuarios y aplicaciones.
-                    </p>
-                    <button class="close-info">Cerrar</button>
-                </div>
+                <button class="learn-more" data-modal-id="modal-2025">Ver más</button>
             </div>
         </div>
     </main>
+
+    <div class="modal" id="modal-2022">
+        <div class="modal-content">
+            <h4>2022: Detalles Iniciales</h4>
+            <p>
+                Durante este año, se sentaron las bases teóricas para la integración de diferentes tipos de
+                datos
+                (texto, imágenes, audio, código) en un solo modelo. Se realizaron experimentos preliminares con
+                diferentes técnicas de aprendizaje automático y se identificaron los desafíos clave a superar.
+            </p>
+            <button class="close-modal" data-modal-id="modal-2022">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-2023">
+        <div class="modal-content">
+            <h4>2023: Avances Clave</h4>
+            <p>
+                Se lograron avances importantes en la arquitectura del modelo, permitiendo una mejor alineación
+                entre las diferentes modalidades de entrada. Se desarrollaron técnicas para el entrenamiento
+                eficiente de modelos a gran escala y se realizaron pruebas internas para evaluar las capacidades
+                iniciales de Gemini.
+            </p>
+            <button class="close-modal" data-modal-id="modal-2023">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-2024">
+        <div class="modal-content">
+            <h4>2024: Despliegue Inicial</h4>
+            <p>
+                Durante este año, se realizaron los primeros despliegues limitados de Gemini en entornos
+                controlados.
+                Se evaluaron sus capacidades en tareas como el razonamiento sobre imágenes, la comprensión de
+                audio
+                y la generación de código, obteniendo resultados prometedores.
+            </p>
+            <button class="close-modal" data-modal-id="modal-2024">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-2025">
+        <div class="modal-content">
+            <h4>2025: El Presente y el Futuro</h4>
+            <p>
+                Actualmente, Gemini sigue evolucionando, con actualizaciones periódicas que mejoran su
+                rendimiento
+                y añaden nuevas funcionalidades. El enfoque se centra en hacerlo más accesible y útil para una
+                amplia gama de usuarios y aplicaciones.
+            </p>
+            <button class="close-modal" data-modal-id="modal-2025">Cerrar</button>
+        </div>
+    </div>
 
     <footer class="fade-in-delay">
         © 2025 | Proyecto sobre Gemini IA
     </footer>
 
+    <div class="modal-overlay"></div>
 
 </body>
 

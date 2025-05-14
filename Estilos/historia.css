@@ -9,12 +9,10 @@
 .timeline-card {
     background-color: #1c2128;
     border-radius: 8px;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 1.5em;
     text-align: center;
     transition: transform 0.3s ease-in-out;
-    position: relative; /* Para posicionar el overlay */
-    overflow: hidden; /* Para que el overlay no se salga */   
 }
 
 .timeline-card:hover {
@@ -22,11 +20,11 @@
 }
 
 .timeline-card img {
-    width: 250px; /* Establece el ancho deseado */
-    height: 150px; /* Establece la altura deseada */
+    width: 250px;
+    height: 150px;
     border-radius: 6px;
     margin-bottom: 1em;
-    object-fit: cover; /* Asegura que la imagen cubra el área y se recorte si es necesario */
+    object-fit: cover;
 }
 
 .timeline-card h3 {
@@ -56,44 +54,50 @@
     color: #161b22;
 }
 
-/* Estilos para el overlay de información */
-.info-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(28, 33, 40, 0.9); /* Fondo oscuro semitransparente */
+/* Estilos para el modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1c2128;
     color: #c9d1d9;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    z-index: 1050; /* Mayor que el overlay */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
 }
 
-.timeline-card.active-info .info-overlay {
+.modal.active {
     opacity: 1;
     visibility: visible;
 }
 
-.info-overlay h4 {
-    color: #f0f8ff;
-    margin-bottom: 0.8em;
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.info-overlay p {
+.modal-content h4 {
+    color: #f0f8ff;
+    margin-bottom: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.modal-content p {
     font-size: 1em;
     line-height: 1.7;
-    padding: 0 1.5em;
     margin-bottom: 1.5em;
-    text-align: left;
 }
 
-.close-info {
+.close-modal {
     background-color: #8b949e;
     color: #161b22;
     border: none;
@@ -102,9 +106,33 @@
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    align-self: flex-end;
+    margin-top: 1em;
 }
 
-.close-info:hover {
+.close-modal:hover {
     background-color: #58a6ff;
     color: #161b22;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.modal-open {
+    overflow: hidden; /* Opcional: para deshabilitar el scroll del fondo */
 }
