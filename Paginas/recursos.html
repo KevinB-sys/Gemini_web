@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recursos y Servicios de Gemini</title>
+    <link rel="stylesheet" href="../Estilos/index.css" />
+    <link rel="stylesheet" href="../Estilos/recursos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="../Scripts/recursos.js"></script>
+</head>
+
+<body>
+    <header class="header-gemini">
+        <img src="../Imagenes/gemini-header.jpg" alt="Gemini Header" class="img-header">
+    </header>
+
+    <nav class="slide-down">
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="funcionalidades.html">Funcionalidades</a>
+        <a href="impacto.html">Impacto Académico</a>
+        <a href="recursos.html" class="active">Recursos y Servicios</a>
+    </nav>
+
+    <main class="fade-in-delay">
+        <h2>Recursos y Servicios de Gemini</h2>
+        <div class="resources-container">
+            <div class="resource-card" data-category="api">
+                <img src="../Imagenes/gemini-api.jpg" alt="Gemini API">
+                <h3>Gemini API</h3>
+                <p>
+                    La API de Gemini permite a los desarrolladores integrar las capacidades multimodales de esta IA en sus propias aplicaciones y servicios. Ofrece flexibilidad para procesar texto, imágenes, audio y código con una interfaz unificada.
+                </p>
+                <div class="buttons-container">
+                    <button class="learn-more" data-modal-id="modal-api">Ver más</button>
+                    <button class="learn-more" href="https://ai.google.dev/gemini-api/docs?hl=es-419">Docs</button>
+                </div>
+
+            </div>
+
+            <div class="resource-card" data-category="sdk">
+                <img src="../Imagenes/gemini-sdk.jpg" alt="Gemini SDK">
+                <h3>SDK para Desarrolladores</h3>
+                <p>
+                    Los SDK de Gemini están disponibles en múltiples lenguajes de programación (Python, JavaScript, Java, entre otros), facilitando la integración en proyectos de desarrollo. Incluyen herramientas y ejemplos para acelerar la implementación.
+                </p>
+                <div class="buttons-container">
+                    <button class="learn-more" data-modal-id="modal-sdk">Ver más</button>
+                    <button class="learn-more" href="https://ai.google.dev/gemini-api/docs/libraries?hl=es-419">Docs</button>
+                </div>
+            </div>
+
+            <div class="resource-card" data-category="docs">
+                <img src="../Imagenes/gemini-documentation.jpg" alt="Documentación de Gemini">
+                <h3>Documentación y Tutoriales</h3>
+                <p>
+                    Recursos detallados para aprender a utilizar las capacidades de Gemini de manera efectiva. Incluye guías paso a paso, mejores prácticas y ejemplos de código para diferentes casos de uso.
+                </p>
+                <div class="buttons-container">
+                    <button class="learn-more" data-modal-id="modal-docs">Ver más</button>
+                    <button class="learn-more" href="https://ai.google.dev/gemini-api/docs?hl=es-419">Docs</button>
+                </div>
+
+            </div>
+
+            <div class="resource-card" data-category="workspace">
+                <img src="../Imagenes/gemini-workspace.jpg" alt="Gemini en Google Workspace">
+                <h3>Gemini en Google Workspace</h3>
+                <p>
+                    Integración de Gemini en las herramientas de Google Workspace como Gmail, Docs, Sheets y Slides, potenciando la productividad y creatividad en entornos colaborativos.
+                </p>
+                <div class="buttons-container">
+                    <button class="learn-more" data-modal-id="modal-workspace">Ver más</button>
+                    <button class="learn-more" href="https://support.google.com/a/answer/13623623?hl=es-419&visit_id=638827855181941717-1677141285&rd=1#terms">Docs</button>
+                </div>
+            </div>
+
+            <div class="resource-card" data-category="models">
+                <img src="../Imagenes/gemini-models.jpg" alt="Modelos de Gemini">
+                <h3>Modelos y Versiones</h3>
+                <p>
+                    Información sobre los diferentes modelos de Gemini disponibles, sus capacidades específicas y recomendaciones para elegir el más adecuado según las necesidades de cada proyecto.
+                </p>
+                <div class="buttons-container">
+                    <button class="learn-more" data-modal-id="modal-models">Ver más</button>
+                    <button class="learn-more" href="https://ai.google.dev/gemini-api/docs/models?hl=es-419">Docs</button>
+
+                </div>
+            </div>
+
+            <div class="resource-card" data-category="community">
+                <img src="../Imagenes/gemini-community.jpg" alt="Comunidad Gemini">
+                <h3>Comunidad y Soporte</h3>
+                <p>
+                    Acceso a foros, grupos de discusión y eventos donde desarrolladores e investigadores comparten conocimientos, soluciones y mejores prácticas relacionadas con el uso de Gemini.
+                </p>
+                <div class="buttons-container">
+                    <button class="learn-more" data-modal-id="modal-community">Ver más</button>
+                    <button class="learn-more" href="https://support.google.com/gemini/thread/309950330/welcome-to-the-google-gemini-community?hl=en">Docs</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" id="modal-api">
+        <div class="modal-content">
+            <h4>Gemini API: Detalles Técnicos</h4>
+            <p>
+                La API de Gemini ofrece endpoints especializados para diferentes tareas:
+                <ul>
+                    <li>Gemini Text: Procesamiento y generación de texto avanzado</li>
+                    <li>Gemini Vision: Análisis y razonamiento sobre imágenes</li>
+                    <li>Gemini Audio: Procesamiento de entrada y salida de audio</li>
+                    <li>Gemini Code: Generación y análisis de código en múltiples lenguajes</li>
+                </ul>
+                Con planes de suscripción flexibles y una cuota gratuita para experimentación, la API se adapta tanto a proyectos personales como empresariales a gran escala.
+            </p>
+            <button class="close-modal" data-modal-id="modal-api">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-sdk">
+        <div class="modal-content">
+            <h4>SDK de Gemini: Herramientas para Desarrolladores</h4>
+            <p>
+                Los SDK de Gemini incluyen:
+                <ul>
+                    <li>Bibliotecas de cliente para Python, JavaScript, Java, Go, y otros lenguajes</li>
+                    <li>Utilidades para manejo de tokens y autenticación</li>
+                    <li>Herramientas de optimización de prompts</li>
+                    <li>Componentes para integración con frameworks populares</li>
+                    <li>Ejemplos de implementación para casos de uso comunes</li>
+                </ul>
+                Los SDK se actualizan regularmente para incorporar nuevas características y mejoras de rendimiento.
+            </p>
+            <button class="close-modal" data-modal-id="modal-sdk">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-docs">
+        <div class="modal-content">
+            <h4>Documentación: Recursos de Aprendizaje</h4>
+            <p>
+                La documentación de Gemini ofrece:
+                <ul>
+                    <li>Guías de inicio rápido para nuevos usuarios</li>
+                    <li>Referencias detalladas de API y parámetros</li>
+                    <li>Tutoriales interactivos con ejemplos prácticos</li>
+                    <li>Guías de mejores prácticas para ingeniería de prompts</li>
+                    <li>Documentación sobre límites, consideraciones éticas y uso responsable</li>
+                    <li>Casos de estudio y ejemplos de implementaciones exitosas</li>
+                </ul>
+                Estos recursos se mantienen actualizados para reflejar las últimas capacidades y recomendaciones.
+            </p>
+            <button class="close-modal" data-modal-id="modal-docs">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-workspace">
+        <div class="modal-content">
+            <h4>Gemini en Google Workspace: Productividad Aumentada</h4>
+            <p>
+                Las integraciones de Gemini en Google Workspace incluyen:
+                <ul>
+                    <li>Gemini para Gmail: Ayuda con redacción, resúmenes y organización de correos</li>
+                    <li>Gemini para Docs: Asistencia en redacción, investigación y edición de documentos</li>
+                    <li>Gemini para Sheets: Análisis de datos, generación de fórmulas y visualizaciones</li>
+                    <li>Gemini para Slides: Creación de presentaciones, diseño y sugerencias de contenido</li>
+                    <li>Gemini para Meet: Transcripción, traducción en tiempo real y resúmenes de reuniones</li>
+                </ul>
+                Estas integraciones están disponibles en varios planes de suscripción de Google Workspace.
+            </p>
+            <button class="close-modal" data-modal-id="modal-workspace">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-models">
+        <div class="modal-content">
+            <h4>Modelos de Gemini: Variantes y Capacidades</h4>
+            <p>
+                La familia de modelos Gemini incluye:
+                <ul>
+                    <li>Gemini Ultra: El modelo más potente, optimizado para tareas complejas y razonamiento avanzado</li>
+                    <li>Gemini Pro: Equilibrio entre rendimiento y eficiencia, ideal para la mayoría de aplicaciones empresariales</li>
+                    <li>Gemini Nano: Modelo ligero para dispositivos móviles y aplicaciones con recursos limitados</li>
+                    <li>Gemini Vision Pro: Especializado en análisis visual y razonamiento sobre imágenes</li>
+                    <li>Gemini Code: Optimizado para generación y análisis de código</li>
+                </ul>
+                Cada modelo tiene diferentes límites de contexto, capacidades multimodales y requisitos de recursos.
+            </p>
+            <button class="close-modal" data-modal-id="modal-models">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-community">
+        <div class="modal-content">
+            <h4>Comunidad Gemini: Recursos Colaborativos</h4>
+            <p>
+                Los recursos comunitarios para usuarios de Gemini incluyen:
+                <ul>
+                    <li>Foro de desarrolladores Gemini: Espacio para preguntas técnicas y compartir soluciones</li>
+                    <li>Repositorio de ejemplos en GitHub: Código abierto y proyectos de muestra</li>
+                    <li>Eventos virtuales y presenciales: Webinars, talleres y conferencias</li>
+                    <li>Programa de expertos certificados: Red de profesionales con experiencia en Gemini</li>
+                    <li>Boletín mensual: Actualizaciones, consejos y casos de éxito</li>
+                </ul>
+                La comunidad es fundamental para el ecosistema Gemini, contribuyendo con ideas, extensiones y retroalimentación para mejorar constantemente la plataforma.
+            </p>
+            <button class="close-modal" data-modal-id="modal-community">Cerrar</button>
+        </div>
+    </div>
+
+    <footer class="fade-in-delay">
+        © 2025 | Proyecto sobre Gemini IA
+    </footer>
+
+    <div class="modal-overlay"></div>
+
+</body>
+
+</html>
